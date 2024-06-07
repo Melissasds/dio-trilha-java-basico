@@ -1,4 +1,4 @@
-## Desafio DIO: Simulando Uma Conta Bancária Através do Terminal/Consele 
+## 📚 Desafio DIO: Simulando Uma Conta Bancária Através do Terminal/Console 
 www.dio.me
 
 #### Professor:
