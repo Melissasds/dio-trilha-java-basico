@@ -13,7 +13,7 @@ public class Contador {
 			contar(parametroUm, parametroDois);
 		
 		}catch (ParametrosInvalidosException exception) {
-			//imprimir a mensagem da exceção
+            //imprime a mensagem da exceção
             System.out.println("O segundo parâmetro deve ser MAIOR e DIFERENTE que o primeiro!");
 		}
 		
@@ -28,6 +28,6 @@ public class Contador {
 		//imprime os números com base na variável contagem
             for (int i =  1; i <= contagem; i++){
                 System.out.println("Imprimindo o número " + i);
-        }
+            }
 	} 
 }
