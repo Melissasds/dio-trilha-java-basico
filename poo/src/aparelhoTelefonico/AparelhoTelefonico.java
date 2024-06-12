@@ -1,7 +1,7 @@
 package aparelhoTelefonico;
 
 public interface AparelhoTelefonico {
-	public void ligar(double numero);
+	public void ligar(String numero);
 	public void atender();
 	public void iniciarCorreioVoz();
 	

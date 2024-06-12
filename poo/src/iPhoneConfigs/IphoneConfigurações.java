@@ -40,7 +40,7 @@ public class IphoneConfigurações implements AparelhoTelefonico, NavegadorInter
 
 	@Override
 	public void iniciarCorreioVoz() {
-		System.out.println("Iniciando correio de voz via aparelho eletronico");
+		System.out.println("Iniciando correio de voz via aparelho telefonico");
 		
 	}
 
