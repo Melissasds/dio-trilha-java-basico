@@ -1,10 +1,10 @@
-package iPhoneConfigs;
+package iPhone;
 
 import aparelhoTelefonico.AparelhoTelefonico;
 import navegadorInternet.NavegadorInternet;
 import reprodutorMusical.ReprodutorMusical;
 
-public class IphoneConfigurações implements AparelhoTelefonico, NavegadorInternet, ReprodutorMusical{
+public class Iphone implements AparelhoTelefonico, NavegadorInternet, ReprodutorMusical{
 
 
 

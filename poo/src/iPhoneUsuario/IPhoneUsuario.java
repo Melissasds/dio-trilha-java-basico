@@ -1,10 +1,10 @@
-package iPhone;
+package iPhoneUsuario;
 
-import iPhoneConfigs.IphoneConfigurações;
+import iPhone.Iphone;
 
-public class IPhone {
+public class IPhoneUsuario {
 	public static void main(String[] args) {
-        IphoneConfigurações meuIphone = new IphoneConfigurações();
+        Iphone meuIphone = new Iphone();
 
         // ReprodutorMusical
         meuIphone.selecionarMusica("Break Free");
