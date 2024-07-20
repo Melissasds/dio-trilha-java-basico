@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args){
-        System.out.println("Bem vindo ao Banco Digital MS");
+        System.out.println("\n    Bem vindo ao Banco Digital Mylis!   \n");
         Cliente melissa = new Cliente();
         melissa.setNome("Melissa");
 
@@ -11,11 +11,12 @@ public class Main {
         Banco.adicionarConta(poupanca);
 
         cc.depositar(100);
-        cc.transferir(50, poupanca);
+        cc.transferir(60, poupanca);
+        cc.sacar(5);
         cc.imprimirExtrato();
-       // poupanca.imprimirExtrato();
+        poupanca.imprimirExtrato();
         
-        System.out.println("===LISTA DE CONTAS===");
+        System.out.println("\n\n===== LISTA DE CONTAS ATIVAS NO SEU NOME =====");
         Banco.obterListaDeContas();
         
 
