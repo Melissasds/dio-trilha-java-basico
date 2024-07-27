@@ -21,7 +21,6 @@ public class Dev {
         if (conteudo.isPresent()) {
             this.conteudosConcluidos.add(conteudo.get());
             this.conteudosInscritos.remove(conteudo.get());
-            System.out.println("\n Certificado de conclusão do(s) curso(s): " + conteudosConcluidos);
         } else {
             System.err.println("Você não está matriculado em nenhum conteúdo");
         }
@@ -32,6 +31,20 @@ public class Dev {
                 .stream()
                 .mapToDouble(conteudo -> conteudo.calcularXp())
                 .sum();
+    }
+
+    public void gerarCertificado() {
+        if (conteudosInscritos.isEmpty() && !conteudosConcluidos.isEmpty()) {
+            System.out.println("Certificado de Conclusão:");
+            System.out.println("Dev: " + this.nome);
+            System.out.println("Conteúdos Concluídos: " + conteudosConcluidos.size());
+            for (Conteudo conteudo : conteudosConcluidos) {
+                System.out.println("- " + conteudo.getTitulo());
+            }
+            System.out.println("Total XP: " + calcularTotalXp());
+        } else {
+            System.err.println("Ainda existem conteúdos a serem concluídos.");
+        }
     }
 
     public String getNome() {

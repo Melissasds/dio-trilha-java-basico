@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.util.Set;
 
 import br.com.dio.desafio.dominio.Bootcamp;
 import br.com.dio.desafio.dominio.Curso;
@@ -31,7 +32,7 @@ public class Main {
         bootcamp.getConteudos().add(mentoria);
 
         Dev devMelissa = new Dev();
-        devMelissa.setNome("Melissa: ");
+        devMelissa.setNome("Melissa ");
         devMelissa.inscreverBootcamp(bootcamp);
         System.out.println("\nConteudos Inscritos Melissa: " + devMelissa.getConteudosInscritos());       
         devMelissa.progradir();
@@ -40,6 +41,8 @@ public class Main {
         System.out.println("\nConteudos Inscritos Melissa: " + devMelissa.getConteudosInscritos());
         System.out.println("\nConteudos Concluidos Melissa: " + devMelissa.getConteudosConcluidos());
         System.out.println("\nXP: " + devMelissa.calcularTotalXp());
+        System.out.println("--------------------");
+        devMelissa.gerarCertificado();
 
         System.out.println("--------------");
 
@@ -51,6 +54,19 @@ public class Main {
         System.out.println("\nConteudos Inscritos João: " + devJoao.getConteudosInscritos());
         System.out.println("\nConteudos Concluidos João: " + devJoao.getConteudosConcluidos());
         System.out.println("\nXP: " + devJoao.calcularTotalXp());
+        System.out.println("--------------------");
+        devJoao.gerarCertificado();
+
+        System.out.println("--------------------");
+
+        Set<Dev> devsInscritos = bootcamp.getDevsInscritos();
+        System.out.println("\nDevs inscritos no " + bootcamp.getNome());
+        for (Dev dev : devsInscritos) {
+            System.out.println(dev.getNome());
+        }
+
+        System.out.println("------------------");
+
 
     }
 
