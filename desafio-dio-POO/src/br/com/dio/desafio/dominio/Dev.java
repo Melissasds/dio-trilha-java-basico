@@ -21,9 +21,9 @@ public class Dev {
         if (conteudo.isPresent()) {
             this.conteudosConcluidos.add(conteudo.get());
             this.conteudosInscritos.remove(conteudo.get());
-            System.out.println("\nParabéns!!!\nVocê progrediu e concluiu o(s) curso(s): " + conteudosConcluidos);
+            System.out.println("\n Certificado de conclusão do(s) curso(s): " + conteudosConcluidos);
         } else {
-            System.err.println("Você não está matriculado em nenhum conteúdo!");
+            System.err.println("Você não está matriculado em nenhum conteúdo");
         }
     }
 
