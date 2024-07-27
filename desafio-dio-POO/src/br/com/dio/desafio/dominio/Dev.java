@@ -5,7 +5,6 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
 
-import javax.swing.text.html.Option;
 
 public class Dev {
     private String nome;
@@ -22,6 +21,7 @@ public class Dev {
         if (conteudo.isPresent()) {
             this.conteudosConcluidos.add(conteudo.get());
             this.conteudosInscritos.remove(conteudo.get());
+            System.out.println("\nParabéns!!!\nVocê progrediu e concluiu o(s) curso(s): " + conteudosConcluidos);
         } else {
             System.err.println("Você não está matriculado em nenhum conteúdo!");
         }
@@ -73,5 +73,7 @@ public class Dev {
     public int hashCode() {
         return Objects.hash(nome, conteudosInscritos, conteudosConcluidos);
     }
-
+  
 }
+
+
